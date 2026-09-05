@@ -27,12 +27,12 @@ jobs:
           ls -la
 
       - name: Test
-        run: echo "Tests passed"
-
+          run: |
+             echo "Running tests..."
+             exit 1
   build:
 
     needs: test
-
     runs-on: ubuntu-latest
 
     steps:
